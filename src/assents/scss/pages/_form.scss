@@ -1,0 +1,121 @@
+#form {
+  margin-top: 50px;
+  .form-wrapper {
+    padding: 50px 0px;
+    position: relative;
+    height: 395px;
+    height: 100%;
+    background-color: aquamarine;
+    @include flex;
+    justify-content: end;
+    @include devices(xs){
+      display: flex;
+      flex-direction: column;
+      .img{
+        position:static;
+        display: block;
+      }
+    }
+    .content {
+      max-width: 476px;
+      // text-align: end
+      margin-right: 20%;
+      @include devices(llg){
+        margin-right: 10%;
+      }
+      @include devices(md){
+        margin-right: 0px;
+      }
+      .page_title{
+        font-size: 48px;
+        @include devices(md){
+          font-size: 40px;
+        }
+      }
+      @include devices (mmd){
+        max-width: 400px;
+      }
+      @include devices(sm){
+        max-width: 300px;
+      }
+      .inp-btn {
+        margin-top: 30px;
+        @include devices(mmd){
+          margin-top: 15px;
+        }
+        input {
+          border: none;
+          padding: 8px 12px;
+          outline: none;
+          border-radius: 10px;
+          max-width: 476px;
+          width: 70%;
+          margin-right: 10px;
+        }
+        button {
+          padding: 8px 12px;
+          border-radius: 12px;
+          border: none;
+          background-color: #0013ff;
+          color: #fff;
+        }
+      }
+      p {
+        margin-top: 30px;
+        color: #6d758d;
+        font-size: 13px;
+        font-weight: 400;
+        span {
+          padding-left: 20px;
+          a {
+            text-decoration: underline;
+            color: #6d758d;
+          }
+        }
+        @include devices(mmd){
+          margin-top: 15px;
+        }
+
+      }
+    }
+    .img {
+      @include flex;
+      justify-content: center;
+      position: absolute;
+      border-radius: 10px;
+      // top: %;
+      left: 20%;
+      @include devices(llg){
+        left: 15%;
+        transform: translate(-30%,0%);
+      }
+      @include devices(sm){
+        
+        left: 0px;
+        transform: translate(0%,0%);
+        height: 350px;
+      }
+      @include devices(xs){
+        display: none;
+      }
+      transform: translate(-50%, 0%);
+      height: 400px;
+      // height: 100%;
+      // background-color: aqua;
+      background: linear-gradient(0deg, #c7e3e9, #c7e3e9),
+        linear-gradient(0deg, #ffffff, #ffffff);
+
+      z-index: 2;
+      img{
+        max-width: 376px;
+        width: 100%;
+        @include devices(md){
+          max-width: 300px;
+        }
+        @include devices(sm){
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}

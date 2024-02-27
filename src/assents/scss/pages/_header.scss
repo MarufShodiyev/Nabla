@@ -1,0 +1,202 @@
+@keyframes slideOutToLeft {
+    from {
+      // transform:scale(0);
+      // height: 0;
+      display: none;
+    }
+    
+    to {
+      // transform: scale(1);
+      // height: 100%;
+      display: flex;
+    }
+  }
+  
+  
+  @keyframes slideOutList {
+    from {
+      display: none;
+      height: 100px;
+    }
+    to {
+      // transform: scale(1);
+     display: flex;
+     height: 292px;
+    }
+  }
+
+
+.header {
+  height: 74px;
+  @include devices(md) {
+    height: 60px;
+  }
+  display: flex;
+  align-items: center;
+  background-color: white;
+  .header-wrapper {
+    @include flex-beetwen;
+    .header-left {
+      h3 {
+        font-size: 30px;
+        @include devices(md) {
+          font-size: 25px;
+        }
+        a {
+          color: #040062;
+          font-weight: 600;
+          @include devices(md) {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    ul {
+      @include flex-beetwen;
+      @include devices(sm){
+        display: none;
+      }
+      // gap: 10px;
+      // width: 30%;
+      li {
+        padding: 0px 16px;
+        @include devices(md) {
+          padding: 0px 10px;
+        }
+        a {
+          padding: 8px 15px;
+          font-weight: 400;
+          font-size: 15px;
+          color: #040062;
+          &:hover {
+            color: white;
+            background-color: #040062;
+            border-radius: 10px;
+          }
+          @include devices(md) {
+            padding: 5px 10px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .header-right {
+      @include flex;
+      gap: 20px;
+      .header-toogle {
+        display: none;
+        @include devices (sm){
+            display: block;
+        }
+      }
+      
+      button {
+        position: relative;
+        @include devices(sm){
+            display: none;
+        }
+        @include flex;
+        gap: 10px;
+        outline: none;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 15px;
+        background-color: #0013ff;
+        @include devices(md) {
+          padding: 5px 12px;
+          font-size: 12px;
+        }
+        div{
+          @include flex;
+          gap: 5px;
+          span{
+            color: white;
+          }
+        }
+        img{
+          color: white;
+        }
+        
+      }
+      .dropdown-list{
+        display: none;
+      }
+      ul{
+        position: absolute;
+        
+        top:60px;
+        @include flex;
+        flex-direction: column;
+        background-color: #0013ff;
+        li{
+          color: white;
+        }
+      }
+    }
+    @include devices(sm){
+
+        .mobile{
+            display: none;
+           
+        }
+        .active{
+            display: block;
+        }
+    }
+  }
+  .active{
+    display: none;
+  }
+  &.position {
+    position: fixed !important;
+
+    top: 0;
+    background-color: white;
+    z-index: 99;
+    width: 100%;
+  }
+  .header-menu {
+    margin-top: 50px;
+    transition: 0.4s ease-in-out;
+    position: fixed;
+    width: 100%;
+    animation: slideOutToLeft 0.1s ease-in-out;
+    top: 0px;
+    z-index: 10;
+    transform: scale(1);
+    padding-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    // padding-top: 200px;
+    ul {
+      animation: slideOutList 0.2s ease-in-out;
+      background-color: #f9f9fe;
+      padding: 10px 0;
+      width: 100%;
+      @include flex-center;
+      flex-direction: column;
+      li {
+        padding: 10px 0;
+        // width: 100%;
+        font-size: 16px;
+        text-align: center;
+        @include flex-center;
+        a {
+          color: #1a1c2c;
+          text-align: center;
+          width: 100%;
+          @include flex;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+.close {
+  display: none;
+}

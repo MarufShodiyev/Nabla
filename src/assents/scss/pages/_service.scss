@@ -1,0 +1,264 @@
+#service {
+  .service-wrapper {
+    margin-top: 70px;
+    @include devices(xs){
+      margin-top: 0px;
+    }
+    // padding-top: 30px;
+    ul {
+      li {
+        position: relative;
+        .img12 {
+          position: absolute;
+          @include flex;
+          justify-content: center;
+          top: 100%;
+          left: 48%;
+          text-align: center;
+          transform: translate(-50%, -100%);
+          img{
+            max-width: 260px;
+            width: 100%;
+            @include devices(md){
+              max-width: 200px;
+            }
+            @include devices(sm){
+              max-width: 150px
+            }
+            @include devices(xs){
+              display: none;
+            }
+            
+          }
+        }
+        div {
+          @include flex-beetwen;
+          @include devices(xs){
+            flex-direction: column;
+           
+          }
+          .content {
+            padding-left: 60px;
+            z-index: 70;
+            height: 648px;
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            @include devices(xs){
+              text-align: center;
+              width: 100%;
+              max-height: 300px;
+              padding-left: 0px;
+            }
+            // background-color: red;
+            .page_title {
+              max-width: 480px;
+              @include devices(md){
+                max-width: 400px;
+                font-size: 40px;
+                
+              }
+              @include devices(sm){
+                max-width: 350px;
+                font-size: 35px;
+              }
+              @include devices(xs){
+                max-width: 500px;
+                width: 100%;
+                font-size: 35px;
+              }
+            }
+            .parag-title{
+              max-width: 480px;
+              @include devices(sm){
+                max-width: 350px;
+                font-size: 15px;
+              }
+            }
+            @include devices(md){
+              height: 600px
+            }
+            @include devices(sm){
+              height: 520px;
+            }
+          }
+          .img {
+            @include flex-beetwen;
+            justify-content: center;
+            height: 648px;
+            width: 50%;
+            text-align: center;
+            @include devices(xs){
+              width: 100%;
+            }
+            img{
+              max-width: 247px;
+              width: 100%;
+              @include devices(md){
+                max-width: 200px;
+              }
+              @include devices(sm){
+                max-width: 180px;
+              }
+              @include devices(xs){
+                max-width: 250px;
+              }
+            }
+            @include devices(md){
+              height: 600px;
+            }
+            @include devices(sm){
+              height: 520px;
+            }
+            @include devices(xs){
+              height: 600px;
+            }
+          }
+        }
+        .flex1 {
+          
+          flex-direction: row-reverse;
+          @include devices(xs){
+            flex-direction: column;
+          }
+          .img {
+            background-color: rgb(218, 170, 200);
+          }
+        }
+        .flex2 {
+          .content{
+            padding-left: 0px;
+          }
+          .img {
+            background-color: rgb(136, 174, 174);
+          }
+        }
+      }
+    }
+    .end {
+      position: relative;
+      @include devices(xs){
+        flex-direction: column-reverse;
+      }
+      .img-center {
+        position: absolute;
+        @include flex;
+        justify-content: center;
+        top: 100%;
+        left: 48%;
+        text-align: center;
+        transform: translate(-50%, -100%);
+        img{
+          max-width: 260px;
+          width: 100%;
+          @include devices(md){
+            max-width: 200px;
+          }
+          @include devices(sm){
+            max-width: 150px
+          }
+          @include devices(xs){
+            display: none;
+          }
+          
+        }
+      }
+      @include flex-beetwen;
+      gap: 20px;
+      .img {
+        @include flex-beetwen;
+        justify-content: center;
+        height: 648px;
+        width: 50%;
+        text-align: center;
+        background-color: rgb(218, 170, 200);
+        @include devices(xs){
+          width: 100%;
+        }
+        img{
+          max-width: 247px;
+          width: 100%;
+          @include devices(md){
+            max-width: 200px;
+          }
+          @include devices(sm){
+            max-width: 180px;
+          }
+          @include devices(xs){
+            max-width: 250px;
+          }
+        }
+        @include devices(md){
+          height: 600px;
+        }
+        @include devices(sm){
+          height: 520px;
+        }
+        @include devices(xs){
+          height: 600px;
+        }
+      }
+      .contend {
+        padding-left: 60px;
+        height: 648px;
+        @include flex;
+        // align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        @include devices(xs){
+          text-align: center;
+          width: 100%;
+          max-height: 300px;
+          padding-left: 0px;
+        }
+        @include devices(md){
+          height: 600px
+        }
+        @include devices(sm){
+          height: 520px;
+        }
+        // background-color: red;
+        .page_title {
+          max-width: 480px;
+          @include devices(md){
+            max-width: 400px;
+            font-size: 40px;
+            
+          }
+          @include devices(sm){
+            max-width: 350px;
+            font-size: 35px;
+          }
+          @include devices(xs){
+            max-width: 500px;
+            width: 100%;
+            font-size: 35px;
+          }
+        }
+        .parag-title{
+          max-width: 480px;
+          @include devices(sm){
+            max-width: 350px;
+            font-size: 15px;
+          }
+        }
+        .btn{
+            @include flex;
+            margin-top: 40px;
+            button{
+                padding: 8px 12px;
+                background-color :#0013ff;
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        }
+      }
+    }
+  }
+}

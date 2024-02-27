@@ -1,0 +1,153 @@
+#about{
+    .about-wrapper{
+        max-height: 100vh;
+        height: 100%;
+        
+        background-color: rgb(171, 171, 226); 
+        .content{
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 400px;
+            color: #040062;
+            font-weight: 900;
+            text-align: center;
+            // background-color: red;
+            h3{
+                font-size: 40px;
+
+            }
+            h2{
+                font-size: 60px;
+            }
+            h1{
+                font-size: 90px;
+            }
+            @include devices(md){
+                font-weight: 700;
+                h3{
+                    font-size: 35px;
+                }
+                h2{
+                    font-size: 45px;
+                }
+                h1{
+                    font-size: 80px;
+                }
+            }
+            @include devices(sm){
+                font-size: 600;
+                h3{
+                    font-size: 28px;
+                }
+                h2{
+                    font-size: 35px;
+                }
+                h1{
+                    font-size: 65px;
+                }
+            }
+            @include devices(xs){
+                height: 250px;
+                h1{
+                font-size: 40px;
+                font-weight: 600;
+                }
+                h2{
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+                h3{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .about-img{
+            @include flex;
+            justify-content: space-between;
+            padding: 0px 25px;
+            height: 200px;
+            width: 100%;
+            @include devices(xs){
+                flex-direction: column;
+                background-color:rgb(171, 171, 226) ;
+                // background-color: red;
+                height: 100%;
+                gap: 20px;
+            }
+            // background-color: yellow;
+            .img-left{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    // background-color: red;
+                    max-width: 335px;
+                    width: 100%;
+                    @include devices(md){
+                        max-width: 280px;
+                    }
+                    @include devices(sm){
+                        max-width: 250px;
+                    }
+                }
+            }
+           
+            .img-center{
+               
+                @include flex;
+                justify-content: space-between;
+                // width: 45%;
+                margin-bottom: 60 px;
+                .line-img{
+                    max-width: 196px;
+                    width: 100%;
+                    @include devices(md){
+                        max-width: 80px;
+                    }
+                    @include devices(sm){
+                        display: none;
+                    }
+                }
+                .n-img{
+                    max-width: 66px;
+                    width: 100%;
+                    @include devices(md){
+                        max-width: 55px;
+                    }
+                    @include devices(sm){
+                        max-width:45px ;
+                    }
+                }
+            }
+            .img-right{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               img{
+                // background-color: red;
+                max-width: 341px;
+                width: 100%;
+                height: 100%;
+                @include devices(md){
+                    max-width: 290px;
+                    max-height: 200px;
+                }
+                @include devices(sm){
+                    max-width: 250px;
+                }
+               }
+            }
+            // @include devices(md){
+            //     .img{
+            //         max-width: 280px;
+            //         max-height: 235px;
+            //         height: 100%;
+            //         background-color: yellow;
+            //     }
+            // }
+        }
+    }
+}
