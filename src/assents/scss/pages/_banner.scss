@@ -2,8 +2,11 @@
     .about-wrapper{
         max-height: 100vh;
         height: 100%;
-        
         background-color: rgb(171, 171, 226); 
+        @include devices(xs){
+            max-height: 150vh;
+            height: 100%;
+        }
         .content{
             @include flex;
             flex-direction: column;
