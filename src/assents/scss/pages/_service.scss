@@ -67,6 +67,7 @@
                 max-width: 500px;
                 width: 100%;
                 font-size: 35px;
+                line-height: 35px;
               }
             }
             .parag-title{
@@ -74,6 +75,9 @@
               @include devices(sm){
                 max-width: 350px;
                 font-size: 15px;
+              }
+              @include devices(xs){
+                margin-top: 20px;
               }
             }
             @include devices(md){
@@ -140,7 +144,7 @@
       position: relative;
       @include devices(xs){
         flex-direction: column-reverse;
-        margin-top: 15px;
+        margin-top: 30px;
       }
       .img-center {
         position: absolute;
@@ -236,6 +240,7 @@
             max-width: 500px;
             width: 100%;
             font-size: 35px;
+            line-height:35px ;
           }
         }
         .parag-title{
