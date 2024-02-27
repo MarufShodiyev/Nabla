@@ -140,6 +140,7 @@
       position: relative;
       @include devices(xs){
         flex-direction: column-reverse;
+        margin-top: 15px;
       }
       .img-center {
         position: absolute;
