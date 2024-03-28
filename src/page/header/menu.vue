@@ -4,7 +4,7 @@
          <ul>
            <li v-for="(value,index) in navs" :key="index">
             <a :href="value.path">{{ value.text }}</a>
-          </li>
+          </li>    
          </ul>
     </div>
 </template>

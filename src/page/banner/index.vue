@@ -3,9 +3,9 @@
         <div class="container">
             <div class="about-wrapper">
                 <div class="content">
-                    <h3>Your connection</h3>
-                    <h2>to your everyday</h2>
-                    <h1>health</h1>
+                    <h3>{{ $t("banner.title1") }}</h3>
+                    <h2>{{ $t("banner.title2") }}</h2>
+                    <h1>{{ $t("banner.title3") }}</h1>
                 </div>
                 <div class="about-img">
                     <div class="img-left">

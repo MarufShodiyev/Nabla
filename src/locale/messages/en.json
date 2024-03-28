@@ -1,0 +1,65 @@
+{
+    "header":{
+        "home":"Home",
+        "vision":"Service",
+        "team":"Team",
+        "careers":"Careers",
+        "blog":"Blog"
+    },
+    "banner":{
+        "title1":"Your connection",
+        "title2":"to your everyday",
+        "title3":"health"
+    },
+    "service":{
+        "card1":{
+            "title":"In sickness and in health",
+            "subtitle":"Whether you have a little scratch, something you’re worried about, an ambitious health goal or you just want to stay healthy, your care team is here every day."
+        },
+        "card2":{
+            "title":"A special relationship",
+            "subtitle":"Composed of doctors and health specialists, your care team will partner with you to create a tailored plan based on medical care, nutrition, exercise and stress."
+        },
+        "card3":{
+            "title":"Always available, in your pocket",
+            "subtitle":"Connect with your care team anytime remotely by message or video call and schedule in-person consultations. Have a question? Just text."
+        },
+        "card4":{
+            "title":"Your data is yours",
+            "subtitle":"Your health data is precious and confidential! You decide what information you want to share, and who you want to share it with."
+        },
+        "end":{
+            "btn":"Get early access",
+            "title":"Toward precision health",
+            "subtitle":"The combination of biological, genetic, phenotypic and environmental data together with AI will unlock our ability to predict, prevent and cure disease more precisely, empowering people to lead healthier lives."
+        }
+
+    },
+    "form":{
+        "placeholder":"Enter your email adress",
+        "title":"Newsletter",
+        "btn":"Submit",
+        "subtitle2":"Nabla uses your email address to send you the newsletter.",
+        "subtitle1":"Get the latest news from Nabla on health and artificial intelligence, straight to your inbox."
+    },
+    "footer":{
+        "card1":{
+            "title":"Company",
+            "subtitle1":"Team",
+            "subtitle2":"Careers"
+        },
+        "card2":{
+            "title":"Address",
+            "subtitle1":"22rue Chapon",
+            "subtitle2":"75003 Paris"
+        },
+        "card3":{
+            "title":"Contact"
+        },
+        "card4":{
+            "subtitle1":"Nabla Technologies -2024",
+            "subtitle2":"All Rights reserved",
+            "subtitle3":"Legal notice T&C"
+        }
+    }
+}

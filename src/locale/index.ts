@@ -1,15 +1,15 @@
 import { createI18n } from "vue-i18n";
 
-import uz from "./messages/uzb.json";
-import ru from "./messages/rus.json";
-import en from "./messages/eng.json";
+import uz from "./messages/uz.json";
+import ru from "./messages/ru.json";
+import en from "./messages/en.json";
 
 export const selectedLocale = localStorage.getItem("lang") || "en";
 
 const messages = {
   uz,
   ru,
-  en,
+  en
 };
 const i18n = createI18n({
   locale: selectedLocale,

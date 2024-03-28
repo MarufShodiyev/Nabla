@@ -11,7 +11,8 @@
                     </li>
                 </ul>
                 <div class="header-right">
-                    <div class="dropdown" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-center">
+                    <div class="dropdown" data-aos="fade-up" data-aos-delay="300"
+                        data-aos-anchor-placement="top-center">
                         <button class="dropbtn" @click="changeOpen">
                             <span class="dropbtn-logo">
                                 <img src="../../assents/icons/world.svg" alt="">
@@ -19,16 +20,15 @@
                             <div>
                                 <span>{{ selected.title }}</span>
                                 <img src="../../assents/icons/cherwon-drown.svg" alt="">
-
                             </div>
 
                         </button>
                         <ul v-if="open">
-                            <li v-for="(value, index) in allLangs" :key="index" @click="changeLang(value)">
-                                <p v-if="value.title !== selected.title">{{ value.title }}</p>
+                            <li v-for="(item, index) in allLangs" :key="index" @click="changeLang(item)">
+                                <p v-if="item.title !== selected.title">{{ item.title }}</p> 
                             </li>
-
                         </ul>
+                        
                     </div>
 
                     <span class="header-toogle" @click="OpenMenu" v-if="!menu">
@@ -52,15 +52,15 @@ const { locale } = useI18n({ useScope: "global" });
 let navs = reactive([
     {
         text: 'header.home',
-        path: '#home'
+        path: '#about'
     },
     {
         text: 'header.vision',
-        path: '#vision'
+        path: '#service'
     },
     {
         text: 'header.team',
-        path: '#team'
+        path: '#form'
     },
     {
         text: "header.careers",
@@ -78,45 +78,52 @@ interface LangItem {
 }
 const langs = ref<Record<string, LangItem>>({});
 const selected = ref<LangItem>({ title: '', short_title: '', value: '' });
+console.log(selected.value);
+console.log("ishladi");
+
+
 const allLangs = reactive<Record<string, LangItem>>({
-    rus: {
+    ru: {
         title: "Pусский",
         short_title: "Pус",
         value: "ru",
     },
-    uzb: {
+    uz: {
         title: "O'zbek",
         short_title: "O'z",
         value: "uz",
     },
-    eng: {
+    en: {
         title: "English",
         short_title: "Eng",
         value: "en",
-    },
+    }
 });
 
-// onMounted(() => {
-//     selected.value = allLangs[localStorage.getItem("lang") || "en"]
-//     langs.value = { ...allLangs };
-//     console.log(locale, "Ishlayapdi");
-// })
+
+
+
+onMounted(() => {
+    selected.value = allLangs[localStorage.getItem("lang") || "en"]
+    langs.value = { ...allLangs };
+    console.log(locale);
+})
+
 const open = ref(false)
 
 const changeOpen = () => {
     open.value = !open.value
-    console.log(open.value,'value')
+    console.log(open.value, 'value')
 }
 
-const changeLang = (e: LangItem) => {
-    selected.value = e
-    langs.value = { ...allLangs };
-    open.value = false
-    localStorage.setItem("lang", e.value)
-    locale.value = e.value;
-    // console.log(locale);
-    console.log(open.value);
-    
+const changeLang = (e:any) => {
+  selected.value = e
+  langs.value = { ...allLangs };
+  localStorage.setItem("lang", e.value)
+  locale.value = e.value;
+  console.log(locale);
+  open.value = false
+
 }
 
 
@@ -126,4 +133,3 @@ const OpenMenu = () => {
 }
 
 </script>
-

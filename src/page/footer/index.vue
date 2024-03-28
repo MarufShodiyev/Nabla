@@ -8,18 +8,18 @@
                     </div>
                     <ul>
                         <li>
-                            <h3>Company</h3>
-                            <p>Team</p>
-                            <p>Careers</p>
+                            <h3>{{ $t('footer.card1.title') }}</h3>
+                            <p>{{ $t('footer.card1.subtitle1') }}</p>
+                            <p>{{ $t('footer.card1.subtitle2') }}</p>
                         </li>
                         <li>
-                            <h3>Address</h3>
-                            <p>22rue Chapon</p>
-                            <p>75003 Paris</p>
+                            <h3>{{ $t('footer.card2.title') }}</h3>
+                            <p>{{ $t('footer.card2.subtitle1') }}</p>
+                            <p>{{ $t('footer.card2.subtitle2') }}</p>
                         </li>
                         <li>
-                            <h3>Contact</h3>
-                            <p>+998943330799    </p>
+                            <h3>{{ $t('footer.card3.title') }}</h3>
+                            <p>+998943330799 </p>
                         </li>
                     </ul>
                 </div>
@@ -27,9 +27,9 @@
                     <div class="network">
 
                     </div>
-                    <p>Nable Technologies -2020</p>
-                    <p>All Rights reseved</p>
-                    <p>Legal notice</p>
+                    <p>{{ $t('footer.card4.subtitle1') }}</p>
+                    <p>{{ $t('footer.card4.subtitle2') }}</p>
+                    <p>{{ $t('footer.card4.subtitle3') }}</p>
                 </div>
             </div>
         </div>

@@ -26,8 +26,12 @@
       @include devices(md){
         margin-right: 0px;
       }
-      .page_title{
+      h2{
+        color: #040062;
+        line-height: 60px;
         font-size: 48px;
+        font-weight: 900;
+        max-width: 812px;
         @include devices(md){
           font-size: 40px;
         }

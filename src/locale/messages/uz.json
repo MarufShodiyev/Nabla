@@ -1,0 +1,64 @@
+{
+    "header":{
+        "home":"Uy",
+        "vision":"Xizmat",
+        "team":"Jamoa",
+        "careers":"Karyera",
+        "blog":"Blog"
+    },
+    "banner":{
+        "title1":"Sizning aloqangiz",
+        "title2":"har kuningizga",
+        "title3":"salomatlik"
+    },
+    "service":{
+        "card1":{
+            "title":"Kasallikda va sog'lig'ida",
+            "subtitle":"Kichkina tirnalganmisiz, tashvishlanayotgan narsangizmi, sog'lig'ingizga katta maqsad qo'yganmisiz yoki shunchaki sog'lom bo'lishni xohlaysizmi, sizning parvarishlash guruhingiz har kuni shu yerda."
+        },
+        "card2":{
+            "title":"Maxsus munosabat",
+            "subtitle":"Shifokorlar va sog'liqni saqlash bo'yicha mutaxassislardan tashkil topgan sizning parvarishlash guruhingiz tibbiy yordam, ovqatlanish, jismoniy mashqlar va stressga asoslangan moslashtirilgan rejani yaratish uchun siz bilan hamkorlik qiladi."
+        },
+        "card3":{
+            "title":"Har doim mavjud, cho'ntagingizda",
+            "subtitle":"Xabar yoki video qo'ng'iroq orqali istalgan vaqtda xizmat ko'rsatish guruhingiz bilan bog'laning va shaxsan maslahatlashuvlarni rejalashtiring.Savolingiz bormi? Faqat matn."
+        },
+        "card4":{
+            "title":"Sizning ma'lumotlaringiz sizniki",
+            "subtitle":"Sizning sog'lig'ingiz haqidagi ma'lumotlar qimmatli va maxfiydir! Qaysi ma'lumotni baham ko'rishni va kim bilan baham ko'rishni o'zingiz hal qilasiz."
+        },
+        "end":{
+            "btn":"Erta ruxsat oling",
+            "title":"Aniq salomatlik tomon",
+            "subtitle":"Biologik, genetik, fenotipik va atrof-muhitga oid ma'lumotlarning sun'iy intellekt bilan uyg'unligi kasalliklarni aniqroq bashorat qilish, oldini olish va davolash qobiliyatimizni ochib beradi, odamlarga sog'lom hayot kechirish imkoniyatini beradi."
+        }
+    },
+    "form":{
+        "placeholder":"E-mail manzilingizni kiriting",
+        "title":"Yangilik xati",
+        "btn":"Yuborish",
+        "subtitle2":"Nabla sizga yangilik xatini yuborish uchun elektron pochta manzilingizdan foydalanadi.",
+        "subtitle1":"Nabla-dan salomatlik va sun'iy intellekt haqidagi so'nggi yangiliklarni to'g'ridan-to'g'ri pochta qutingizga oling."
+    },
+    "footer":{
+        "card1":{
+            "title":"Kompaniya",
+            "subtitle1":"Jamoa",
+            "subtitle2":"Karyera"
+        },
+        "card2":{
+            "title":"Manzil",
+            "subtitle1":"Chapon ko'chasi, 22",
+            "subtitle2":"75003 Parij"
+        },
+        "card3":{
+            "title":"Aloqa"
+        },
+        "card4":{
+            "subtitle1":"Nabla Technologies-2024",
+            "subtitle2":"Barcha huquqlar himoyalangan",
+            "subtitle3":"Yuridik bildirishnoma T&C"
+        }
+    }
+}

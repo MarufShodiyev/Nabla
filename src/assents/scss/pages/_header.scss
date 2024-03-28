@@ -21,7 +21,7 @@
     to {
       // transform: scale(1);
      display: flex;
-     height: 292px;
+     height: 260px;
     }
   }
 
@@ -157,11 +157,11 @@
     width: 100%;
   }
   .header-menu {
-    margin-top: 50px;
-    transition: 0.4s ease-in-out;
+    margin-top: 49px;
+    transition: 0.3s ease-in-out;
     position: fixed;
     width: 100%;
-    animation: slideOutToLeft 0.1s ease-in-out;
+    animation: slideOutToLeft 0.3s ease-in-out;
     top: 0px;
     z-index: 10;
     transform: scale(1);
@@ -169,11 +169,10 @@
     transition: all 0.3s ease-in-out;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    // padding-top: 200px;
     ul {
-      animation: slideOutList 0.2s ease-in-out;
+      animation: slideOutList 0.3s ease-in-out;
       background-color: #f9f9fe;
-      padding: 10px 0;
+      padding: 20px 0;
       width: 100%;
       @include flex-center;
       flex-direction: column;
